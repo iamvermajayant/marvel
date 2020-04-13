@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+img {
+    border-radius: 8px;
+} 
+
+
+img:hover {
+    box-shadow: 0 0 34px 25px rgba(0, 140, 186, 0.5);
+}
+
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;margin:0}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.8s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: black;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body background="5.jpg">
+<br>
+<div class="slideshow-container"><center>
+<div class="mySlides fade">
+  <img src="Phase 4.jfif" width="800" height="400" border="5">
+<div class"text"><font face="arial black"><h1><a href="https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe:_Phase_Four" Target="_new">Mravel Phase 4 Started</h1></a></font></div>
+</div>
+
+<div class="mySlides fade">
+  <img src="tvsries.jpg" width="800" height="400" border="5">
+<div class"text"><font face="arial black"><h1><a href="http://www.animationboss.net/upcoming-marvel-movies/" Target="_new">Marvel Now Dealing In TV Series</h1></a></font></div>
+</div>
+
+<div class="mySlides fade">
+  <img src="blackwidow.jpg" width="800" height="400" border="5">
+<div class"text"><font face="arial black"><h1><a href="https://en.wikipedia.org/wiki/Black_Widow_(2020_film)" Target="_new">New Poster And Trailer Out Now</h1></a></font></div>
+</div>
+
+<div class="mySlides fade">
+  <img src="tonystark.webp" width="800" height="400" border="5">
+<div class"text"><font face="arial black"><h1><a href="https://www.thecrimson.com/article/2019/5/7/avengers-endgame-commentary/"Target="_new">Phase 3 Ended With Tony Stark's Sacrifice</h1></a></font></div></div>
+
+</center>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<hr>
+<hr>
+<hr>
+<hr>
+<font face="Berlin Sans FB" color="BLUE">
+<center><h1><u><b>HEART OF MARVEL(R.I.P. STAN LEE)</u></b></h1></center>
+<table cellpadding="27">
+<tr>
+<td>
+<img src="mar.jpg"  width="280" height="300"></td>
+<td><img src="stan.jpg" width="280" height="300"></td>
+<td><img src="issac.jpg" width="280" height="300"></td>
+<td><img src="axel.jpg"  width="280" height="300"></td>
+</tr>
+<tr
+</tr>
+</table>
+<hr>
+<font face="Berlin Sans FB" color="blue" >
+<center><h1><u><b>ACTORS PLAYED ROLE OF OUR HEROS</u></b></h1></center>
+<table cellpadding="27">
+<tr>
+<td>
+<img src="ro.jpg"  width="280" height="300"></td>
+<td><img src="ce.png" width="280" height="300"></td>
+<td><img src="ch.jpg" width="280" height="300"></td>
+<td><img src="ma.jpg"  width="280" height="300"></td>
+</tr>
+<tr>
+<td><center>Robert Downey jr</center></td>
+<td><center>Chris Evans</center></td>
+<td><center>Chris Hemsworth</center></td>
+<td><center>Mark Ruffalo</center></td>
+</tr>
+<tr>
+<td>
+<img src="sc.jpg"  width="280" height="300"></td>
+<td><img src="j.jpg" width="280" height="300"></td>
+<td><img src="sa.jpg" width="280" height="300"></td>
+<td><img src="to.jpg"  width="280" height="300"></td>
+</tr>
+<tr>
+<td><center>Scarlett Johansson </center></td>
+<td><center>Jeremy Renner</center></td>
+<td><center>Samuel L Jackson</center></td>
+<td><center>Tom Hiddleston</center></td>
+</tr>
+</table>
+</font>
+<hr>
+<hr>
+<font face="Berlin Sans FB" color="blue" >
+<center><h1><u><b>PREVIEW OF UPCOMING MOVIE</u></b></h1></center>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<center><img src="blackwidow.png" width="400" height="200"></center>
+
+<center><video width="800" height="350" controls>
+<source src="bl.mp4" type="video/mp4">
+</center>
+</video> <br><br>
+<center><img src="bla1.jpg" width="1000" heiht="1024"></center>
+<br>
+
+<br>
+<hr>
+<hr>
+<hr>
+
+
+
+</body>
+</html>
